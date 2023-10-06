@@ -20,7 +20,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TvDemo">
+        <activity
+            android:name=".GameActivity"
+            android:screenOrientation="landscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="design_width"
@@ -29,24 +38,20 @@
             android:name="design_height"
             android:value="1080" />
 
+<!--        <activity-->
+<!--            android:name=".activity.MainActivity"-->
+<!--            android:exported="true"-->
+<!--            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-        <activity
-             android:name=".activity.MainActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
         <activity android:name=".activity.BroadTestActivity" />
-
         <activity android:name=".activity.ListViewTestActivity" />
-
         <activity android:name=".activity.GridViewTestActivity" />
-
     </application>
 
 </manifest>
